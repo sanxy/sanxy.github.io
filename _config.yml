@@ -1,6 +1,6 @@
 name: Mobile Development
 url: https://sanxy.github.io/
-timezone: Africa/Pacific
+timezone: Nigeria/Lagos
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
