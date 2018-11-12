@@ -1,2 +1,6 @@
-name: Yusuf Adefolahan
-markdown: kramdown
+name: Mobile Development
+url: https://sanxy.github.io/
+timezone: Africa/Pacific
+plugins:
+    - jekyll-feed
+    - jekyll-seo-tag
