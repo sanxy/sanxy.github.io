@@ -1,29 +1,120 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:yusufadefolahan@gmail.com">EMAIL</a></li>
-	        		<li><a href="https://github.com/sanxy">GITHUB</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TKBJCHC');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    {% seo %}
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKBJCHC"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="page-header">
+        <h1>Mobile Development</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <h2 class="visuallyhidden">Articles</h2>
+
+            {{ content }}
+
+        </main>
+
+        <aside>
+            <img style="width:auto; height:100%" src="img/profilepic.png" alt="My profile picture">
+
+            <div class="sidebar-text">
+                <h3>About Me</h3>
+                <p>I am interested in using data to solve problems for people as they engage in the world around them. This is my journey to improve my skills and grow in my understanding of how to do that.</p>
+
+                <h3><a href="https://sanxy.github.io/portfolio/">Portfolio</a></h3>
+                <p>You can find my contact details at <a href="https://github.com/sanxy" rel="noopener noreferrer" target="_blank">My Github</a>.</p>
+                <br>
+<!--                 <h3>Blog Posts</h3>
+                <h4>November 2018</h4>
+                <ul type="square">
+                    <li>Nov 04 - <a href="https://rebeccaebarnes.github.io/2018/11/04/finding-flowers">Finding Flowers with NN</a></li>
+                </ul>
+                <h4>October 2018</h4>
+                <ul type="square">
+                    <li>Oct 12 - <a href="https://rebeccaebarnes.github.io/2018/10/11/what-is-machine-learning">What is Machine Learning?</a></li>
+                    <li>Oct 03 - <a href="https://rebeccaebarnes.github.io/2018/10/03/i-moved">I Moved!</a></li>
+                </ul>
+                <h4>July 2018</h4>
+                <ul type="square">
+                    <li>Jul 13 - <a href="https://rebeccaebarnes.github.io/2018/07/13/homelessness-in-america">Homelessness in America</a></li>
+                    <li>Jul 11 - <a href="https://rebeccaebarnes.github.io/2018/07/11/exploring-data">What am I Supposed to do in EDA?</a></li>
+                </ul>
+                <h4>June 2018</h4>
+                <ul type="square">
+                    <li>Jun 30 - <a href="https://rebeccaebarnes.github.io/2018/06/30/what-ive-learned-jun-30">What I've Learned So Far</a></li>
+                    <li>Jun 29 - <a href="https://rebeccaebarnes.github.io/2018/06/29/the-world-of-dogs">The World of Dogs</a></li>
+                    <li>Jun 16 - <a href="https://rebeccaebarnes.github.io/2018/06/16/setting-up-for-success">Setting Up for Success</a></li>
+                    <li>Jun 11 - <a href="https://rebeccaebarnes.github.io/2018/06/11/making-predictions">Making Predictions</a></li>
+                </ul>
+
+                <h4>May 2018</h4>
+                <ul type="square">
+                    <li>May 28 - <a href="https://rebeccaebarnes.github.io/2018/05/28/pretty-pictures">Pretty Pictures</a></li>
+                    <li>May 20 - <a href="https://rebeccaebarnes.github.io/2018/05/20/learning-r">Learning R</a></li>
+                    <li>May 08 - <a href="https://rebeccaebarnes.github.io/2018/05/08/what-ive-learned-may-18">What I've Learned So Far</a></li>
+                    <li>May 07 - <a href="https://rebeccaebarnes.github.io/2018/05/07/understanding-homelessness">Understanding Homelessness</a></li>
+                    <li>May 01 - <a href="https://rebeccaebarnes.github.io/2018/05/01/what-is-a-p-value">What is a p-value?</a></li>
+                </ul>
+
+                <h4>April 2018</h4>
+                <ul type="square">
+                    <li>Apr 29 - <a href="https://rebeccaebarnes.github.io/2018/04/29/bootstrapping">Bootstrapping</a></li>
+                    <li>Apr 24 - <a href="https://rebeccaebarnes.github.io/2018/04/24/real-data-analysis">Real Data Analysis!</a></li>
+                </ul>
+
+                <h4>March 2018</h4>
+                <ul type="square">
+                    <li>Mar 31 - <a href="https://rebeccaebarnes.github.io/2018/03/31/on-vacation">On Vacation</a></li>
+                    <li>Mar 28 - <a href="https://rebeccaebarnes.github.io/2018/03/28/super-predictors">Super Predictors</a></li>
+                    <li>Mar 20 - <a href="https://rebeccaebarnes.github.io/2018/03/20/effective-visualizations">Effective Visualizations</a></li>
+                    <li>Mar 16 - <a href="https://rebeccaebarnes.github.io/2018/03/16/what-ive-learned-mar-18">What I've Learned So Far</a></li>
+                    <li>Mar 15 - <a href="https://rebeccaebarnes.github.io/2018/03/15/more-linear-algebra">More Linear Algebra</a></li>
+                    <li>Mar 10 - <a href="https://rebeccaebarnes.github.io/2018/03/10/irreproducibility">Irreproducibility</a></li>
+                    <li>Mar 02 - <a href="https://rebeccaebarnes.github.io/2018/03/02/brushing-up-on-linear-algebra">Linear Algebra</a></li>
+                    <li>Mar 01 - <a href="https://rebeccaebarnes.github.io/2018/03/01/presenting-data">Presenting Data</a></li>
+                </ul>
+
+                <h4>February 2018</h4>
+                <ul type="square">
+                    <li>Feb 27 - <a href="https://rebeccaebarnes.github.io/2018/02/27/learning-python">Learning Python</a></li>
+                    <li>Feb 26 - <a href="https://rebeccaebarnes.github.io/2018/02/26/getting-my-feet-wet">Getting My Feet Wet</a></li>
+                    <li>Feb 25 - <a href="https://rebeccaebarnes.github.io/2018/02/25/getting-started">Getting Started</a></li>
+                    <li>Feb 24 - <a href="https://rebeccaebarnes.github.io/2018/02/24/how-did-i-get-here">How Did I Get Here?</a></li>
+                </ul> -->
+
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+    <ul>
+        <a href="https://github.com/rebeccaebarnes" rel="noopener noreferrer" target="_blank">github.com/rebeccaebarnes</a>
+        <p>The design of this site was gratefully created through a fork of the Udacity <a href="https://github.com/udacity/course-git-blog-project" rel="noopener noreferrer" target="_blank">course-git-blog-project</a> repo.</p>
+        <p>Utilization of Jekyll formatting was created using instructions at <a href="http://jmcglone.com/guides/github-pages/" rel="noopener noreferrer" target="_blank">this site</a> by Jonathan McGlone.</p>
+    </ul>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
